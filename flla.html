@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script>
+             function draw(){
+                var ctx=document.getElementById("mycanvas").getContext("2d");
+        ctx.beginPath();
+          ctx.lineWidth=35;
+          ctx.lineCap="round";
+          ctx.Join ="round";
+          ctx.strokeStyle=" #800000";
+          ctx.moveTo(50,50);
+          ctx.lineTo(120,50);
+          ctx.stroke();
+          ctx.closePath();
+          ctx.beginPath();
+          ctx.lineWidth=33;
+          ctx.lineCap="round";
+          ctx.lineJoin ="round";
+          ctx.strokeStyle="#00008B";
+          ctx.fillStyle="#00008B"
+          ctx.moveTo(120,105);
+          ctx.lineTo(50,105);
+          ctx.lineTo(50,170);
+          ctx.moveTo(165,50);
+          ctx.lineTo(165,170);
+          ctx.moveTo(210,50);
+          ctx.lineTo(210,170)
+          ctx.lineTo(280,170);
+          ctx.lineTo(310,50);
+          ctx.lineTo(390,170);
+          ctx.lineTo(330,170);
+          ctx.stroke();
+          ctx.closePath();
+
+      }
+        </script>
+        <title>fillStyle logo Example</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body onload="draw()">
+      <center>
+        <canvas id="mycanvas" height="500" width="500" style="border: 1px solid;"></canvas>
+      </center>
+    </body>
+</html>
