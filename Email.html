@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+     var n,c;
+       function valid_email(){
+        n=t1.value;
+        c=0;
+       for( var i=0;i<n.length;i++){
+      if(n.charAt(i)=="@")
+       c++;
+}
+if(n.indexOf("@")==0||n.indexOf("@")==(n.length-1))
+alert("Invalid Email misplaced @ [Begin or End]");
+
+else if(n.indexOf("@")==-1)
+alert("plz Include @ Symbol");
+
+else if(n.indexOf(".com")==-1)
+alert("plz Include Domain Name(.com)");
+
+else if(c>1)
+alert("Only once Include @ Symbol");
+else
+alert("This is a valid Email....");
+}
+</script>
+</head>
+<body>
+<input type="text" name="t1" id="t1"placeholder="example@gmail.com">
+<input type="button" value="Validate"onClick="valid_email();">
+</body>
+</html>
